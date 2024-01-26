@@ -1,9 +1,9 @@
 import os
 
 # 图像文件夹
-image_path = r'F:\Target_detection\datasets\DJI ROCO\images'
+image_path = r'F:\Target_detection\datasets\RPS_Dataset\images'
 # 标签文件夹
-label_path = r'F:\Target_detection\datasets\DJI ROCO\label'
+label_path = r'F:\Target_detection\datasets\RPS_Dataset\label'
 
 def compare_and_keep_intersection(large, small):
     for large_file in os.listdir(large):
