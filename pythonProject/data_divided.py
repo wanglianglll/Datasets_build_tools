@@ -46,7 +46,7 @@ def main():
     label_source_dir = r'F:\Target_detection\datasets\RPS_Dataset\label'
 
     # 请替换为你的数据集目录
-    dataset_dir = r'F:\Target_detection\datasets'
+    dataset_dir = r'F:\Target_detection\datasets\car_with_color'
 
     # 创建目录结构
     create_dataset_structure(dataset_dir)
