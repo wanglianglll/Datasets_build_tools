@@ -1,9 +1,10 @@
 import os
 
 # 图像文件夹
-image_path = r'F:\Target_detection\datasets\HEU_Month1\images'
+image_path = r'F:\Target_detection\datasets\dataset_new\dataset_new\image'
 # 标签文件夹
-label_path = r'F:\Target_detection\datasets\HEU_Month1\label'
+label_path = r'F:\Target_detection\datasets\dataset_new\dataset_new\label'
+
 
 def compare_and_keep_intersection(large, small):
     for large_file in os.listdir(large):
@@ -20,7 +21,8 @@ def compare_and_keep_intersection(large, small):
         if not found:
             file_to_remove = os.path.join(large, large_file)
             print(f"Removing file: {file_to_remove}")
-            os.remove(file_to_remove)
+            # os.remove(file_to_remove)
+
 
 # 1. 判断文件个数
 count1 = len([f for f in os.listdir(image_path) if os.path.isfile(os.path.join(image_path, f))])
